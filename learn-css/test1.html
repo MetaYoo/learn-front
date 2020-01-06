@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css layout1</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+
+        .content0 {
+            width: 100px;
+            height: 100px;
+            /*left: 10px;*/
+            background-color: yellow;
+            position: static;
+        }
+
+        .content1 {
+            width: 100px;
+            height: 100px;
+            left: 20px;
+            top: 20px;
+            background-color: red;
+            position: relative;
+        }
+
+        /**
+         * 不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，来确定元素位置。绝对定位的元素可以设置外边距（margin），且不会与其他边距合并。
+         */
+        .content2 {
+            width: 100px;
+            height: 100px;
+            left: 10px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content0"></div>
+    <div class="content1"></div>
+    <div class="content2"></div>
+</div>
+</body>
+</html>
