@@ -2,13 +2,16 @@
   "name": "demo1-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config=config/webpack.dev.js",
+    "dev": "webpack-dev-server --config=config/webpack.dev.js --progress --colors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "webpack": "^4.41.5"
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-cli": "^3.3.10"
   }
 }
