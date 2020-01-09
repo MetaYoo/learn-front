@@ -1,5 +1,5 @@
 {
-  "name": "demo1",
+  "name": "demo2-betterscroll",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-redux": "^7.1.3",
     "react-scripts": "3.3.0"
   },
   "scripts": {
