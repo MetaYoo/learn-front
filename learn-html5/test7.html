@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js global function</title>
+    <script type="text/javascript">
+        let uri = "my test.asp?name=ståle&car=saab";
+        document.write(encodeURI(uri) + "<br>");
+        document.write(decodeURI(uri));
+        document.write('<br/>');
+        eval("x=10;y=20;document.write(x*y)");
+        document.write("<br>" + eval("2+2"));
+        document.write("<br>" + eval(x+17));
+        document.write(String(new Date()));
+        document.write('<br/>');
+
+        let str="Need tips? Visit RUNOOB!";
+        let str_esc=escape(str);
+        document.write(str_esc + "<br>")
+        document.write(unescape(str_esc));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

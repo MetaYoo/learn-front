@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myFunction(element, clr) {
+            element.style.color = clr;
+            console.info(clr);
+        }
+    </script>
+</head>
+<body>
+<p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')" onclick="myFunction(this, 'yellow')">
+    单击文本改变颜色。触发一个带参数函数,当鼠标按钮被按下,,当释放鼠标按钮，再一次触发其他参数函数
+</p>
+</body>
+</html>
